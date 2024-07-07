@@ -1,0 +1,67 @@
+/* gallery.css */
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Header styling */
+h1 {
+    margin: 20px 0;
+}
+
+/* Gallery section styling */
+#gallery {
+    text-align: center;
+}
+
+/* Figure styling */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+}
+
+/* Thumbnail list styling */
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* Thumbnail list item styling */
+.thumbnails li {
+    margin: 0 10px;
+}
+
+/* Thumbnail image styling */
+.thumbnails img {
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+/* Styling for active and hovered thumbnails */
+.thumbnails img.active, .thumbnails img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Figcaption styling */
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+}
